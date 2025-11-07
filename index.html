@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="aNNfjCxr3d7vgxoGhUToP42Dzcy53OoGSUxCjBdt_-k" />
-    <title>Delicias Gourmet - Tu restaurante favorito</title>
+    <title>Le Petit Château - Cocina de Autor</title>
     <style>
         * {
             margin: 0;
@@ -68,6 +68,13 @@
             border-radius: 8px;
             padding: 1rem;
             text-align: center;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
         }
 
         .menu-item img {
@@ -84,6 +91,24 @@
             margin: 1rem 0;
         }
 
+        .menu-section {
+            margin-bottom: 3rem;
+        }
+
+        .menu-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .menu-description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -95,8 +120,8 @@
 </head>
 <body>
     <header>
-        <h1>Delicias Gourmet</h1>
-        <p>Los mejores sabores para tu paladar</p>
+        <h1>Le Petit Château</h1>
+        <p>Alta cocina con pasión y elegancia</p>
     </header>
 
     <nav>
@@ -109,37 +134,84 @@
 
     <section class="hero" id="inicio">
         <div>
-            <h2>Bienvenido a Delicias Gourmet</h2>
-            <p>Descubre nuestra deliciosa selección de platillos preparados con los mejores ingredientes</p>
+            <h2>Bienvenido a Le Petit Château</h2>
+            <p>Una experiencia gastronómica única donde cada plato cuenta una historia</p>
         </div>
     </section>
 
     <section class="menu" id="menu">
-        <h2>Nuestro Menú</h2>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza Peperoni ">
-                <h3>Pizza Gourmet</h3>
-                <p>Deliciosa Pizza con Peperoni premium, salsa de tomates naturales, queso mozzarella y masa fresca </p>
-                <p class="precio">$19.99</p>
+        <h2 class="menu-title">Carta Le Petit Château</h2>
+        <p class="menu-description">Una selección exquisita de platos preparados con ingredientes de temporada</p>
+        
+        <div class="menu-section">
+            <h3 class="menu-title">Entradas</h3>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Ensalada">
+                    <h3>Ensalada César Royale</h3>
+                    <p>Lechuga romana, crutones artesanales, pollo confitado y aderezo césar tradicional</p>
+                    <p class="precio">$16.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1543253687-c931c8e01820" alt="Carpaccio">
+                    <h3>Carpaccio de Res</h3>
+                    <p>Finas láminas de res premium, rúcula, parmesano y aceite de trufa</p>
+                    <p class="precio">$19.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1594576182733-ad4ec76e674f" alt="Sopa">
+                    <h3>Crema de Calabaza</h3>
+                    <p>Calabaza asada, crema fresca y semillas tostadas</p>
+                    <p class="precio">$14.99</p>
+                </div>
             </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143" alt="Pizza">
-                <h3>Pizza Margherita</h3>
-                <p>Pizza artesanal con salsa de tomate, mozzarella fresca y albahaca</p>
-                <p class="precio">$15.99</p>
+        </div>
+
+        <div class="menu-section">
+            <h3 class="menu-title">Platos Principales</h3>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Ribeye">
+                    <h3>Ribeye al Grill</h3>
+                    <p>Corte premium de 350g, puré trufado y vegetales asados</p>
+                    <p class="precio">$39.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8" alt="Pasta">
+                    <h3>Fettuccine aux Champignons</h3>
+                    <p>Pasta fresca, variedad de hongos silvestres y salsa de vino blanco</p>
+                    <p class="precio">$24.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1534524420298-03c1a572c8d5" alt="Salmón">
+                    <h3>Salmón en Costra</h3>
+                    <p>Salmón noruego, costra de hierbas, risotto de limón</p>
+                    <p class="precio">$32.99</p>
+                </div>
             </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Ensalada">
-                <h3>Ensalada César</h3>
-                <p>Lechuga romana, crutones, pollo a la parrilla y aderezo césar</p>
-                <p class="precio">$9.99</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8" alt="Pasta">
-                <h3>Pasta Alfredo</h3>
-                <p>Fetuccini en salsa cremosa con pollo y champiñones</p>
-                <p class="precio">$13.99</p>
+        </div>
+
+        <div class="menu-section">
+            <h3 class="menu-title">Bebidas Selectas</h3>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03" alt="Vino">
+                    <h3>Vino Tinto Reserva</h3>
+                    <p>Selección de vinos tintos premium por copa</p>
+                    <p class="precio">$12.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813" alt="Cocktail">
+                    <h3>Signature Cocktails</h3>
+                    <p>Creaciones únicas de nuestro mixólogo</p>
+                    <p class="precio">$14.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" alt="Café">
+                    <h3>Café de Especialidad</h3>
+                    <p>Granos seleccionados y preparaciones artesanales</p>
+                    <p class="precio">$6.99</p>
+                </div>
             </div>
         </div>
     </section>
@@ -148,7 +220,7 @@
         <h2>Contacto</h2>
         <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
         <p>📞 Teléfono: (+503) 7679 7617</p>
-        <p>📧 Email: deliciasgourmet@gmai.com</p>
+        <p>📧 Email: deliciasgourmet980@gmail.com</p>
         <p>🏠 Dirección: Calle Principal #123, Ciudad Pacifica</p>
     </section>
 
